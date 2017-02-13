@@ -1,0 +1,246 @@
+#EXTM3U
+###### DAVID_SLK LIST IPTV ###### 
+###### PEDIDOS ? ###### 
+###### https://www.facebook.com/David.Serafim.Leite ###### 
+#EXTINF:1,Globo RJ 
+http://217.23.2.169:8081/look/globo/playlist.m3u8
+#EXTINF:0,Globo SP 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/853.ts
+#EXTINF:0,Globo MG 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/466.ts
+#EXTINF:0,SBT  
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/411.ts
+#EXTINF:0,SBT HD 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/678.ts
+#EXTINF:0,Record RJ 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/478.ts
+#EXTINF:0,Record SP
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/659.ts
+#EXTINF:0,Band RJ
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/527.ts
+#EXTINF:1,Band SP
+http://
+#EXTINF:0,Rede TV! 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/414.ts
+#EXTINF:1,TV Gazeta
+http://streaming50.sitehosting.com.br:1935/alternativa/alternativa/playlist.m3u8
+#EXTINF:1,TV Cultura 
+http://192.99.148.73:8080/live/CarlosJoseDeOliveira/HD/1.m3u8
+#EXTINF:1,NBR
+http://
+#EXTINF:1,Fish TV
+http://192.99.148.73:8080/live/CarlosJoseDeOliveira/HD/110.m3u8
+#EXTINF:1,TV UP HD
+http://69.46.0.170:1935/tvup/tvup.stream/live.m3u8
+#EXTINF:1,Food Network
+http://158.69.127.12:25461/live/mfernando2/421/985.m3u8
+#EXTINF:1,TVE RS
+http://s5.procergs.com.br:1935/tve/stve/live.m3u8
+#EXTINF:1,TV Brasil
+http://158.69.127.12:25461/live/mfernando2/421/18.ts
+#EXTINF:1,Multi TV
+http://a3.fabricahost.com.br:1935/multitv/stream/live.m3u8
+#EXTINF:1,TVC MG
+http://flash.asaweb.com.br:1935/8080/8080/live.m3u8
+#EXTINF:1,Canal Viva 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/243.ts
+#EXTINF:0,Multishow
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/476.ts
+#EXTINF:0,GNT 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/157.ts
+#EXTINF:1,Super Sonic TV
+http://str103.setplex.net:1935/228//stv_online/playlist.m3u8
+#EXTINF:1,Miami TV Music
+http://74.208.152.93/music/stream3/stream.m3u8
+#EXTINF:1,Music Box Brazil
+http://
+#EXTINF:1,Prime Box Brazil
+http://
+#EXTINF:1,+ Globo SAT
+http://
+#EXTINF:1,ISAT
+http://
+#EXTINF:1,Lifetime
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/725.ts
+#EXTINF:1,VH1 HD
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/676.ts
+#EXTINF:1,Play TV
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/744.ts
+#EXTINF:1,Mix TV
+http://abr.mixtv.upx.net.br/1352/myStream.sdp/playlist.m3u8
+#EXTINF:1,MTV Brasil
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/620.ts
+#EXTINF:1,Canal BIS 
+http://
+#EXTINF:1,E! 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/632.ts
+#EXTINF:1,Tru TV 
+http://
+#EXTINF:1,Virgin
+rtmp://tv.105.net:1935/live playpath=virgin1 swfUrl=http://video.virginradioitaly.it/com/universalmind/swf/videoPlayerTV.swf?xmlPath=http://video.virginradioitaly.it/com/universalmind/tv/virgin/videoXML.xml pageUrl=http://www.vertvgratuita.com/cn/inicial2.htm
+#EXTINF:0,FOX 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/718.ts
+#EXTINF:1,FOX HD 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/671.ts
+#EXTINF:0,Megapix 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/722.ts
+#EXTINF:0,FOX Life 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/463.ts
+#EXTINF:0,FOX Action
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/743.ts
+#EXTINF:1,FOX Comedy
+http://158.69.127.12:25461/live/mfernando2/421/1875.m3u8
+#EXTINF:0,FX 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/462.ts
+#EXTINF:0,HBO
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/692.ts
+#EXTINF:0,HBO Plus
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/497.ts
+#EXTINF:0,HBO Family 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/691.ts
+#EXTINF:0,HBO Signature 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/694.ts
+#EXTINF:0,Warner Channel TV
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/739.ts
+#EXTINF:1,Universal Channel 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/700.ts
+#EXTINF:0,Space Channel 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/713.ts
+#EXTINF:0,Studio Universal 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/720.ts
+#EXTINF:0,Canal Sony
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/719.ts
+#EXTINF:0,Canal Sony 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/507.ts
+#EXTINF:0,Max 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/501.ts
+#EXTINF:0,Maxprime 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/729.ts
+#EXTINF:1,Max UP 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/503.ts
+#EXTINF:1,Cinemax 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/450.ts
+#EXTINF:0,TNT 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/703.ts
+#EXTINF:0,TNT Series
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/791.ts
+#EXTINF:1,Paramount Channel 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/709.ts
+#EXTINF:1,Canal Brasil 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/708.ts
+#EXTINF:1,TBS Brasil 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/683.ts
+#EXTINF:1,Telecine Premium
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/688.ts
+#EXTINF:1,Telecine Pipoca 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/687.ts
+#EXTINF:1,Telecine Action 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/684.ts
+#EXTINF:1,Telecine Touch 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/689.ts
+#EXTINF:1,Telecine Fun 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/686.ts
+#EXTINF:1,Telecine Cult 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/685.ts
+#EXTINF:1,A&E 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/727.ts
+#EXTINF:1,AXN 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/824.ts
+#EXTINF:1,AMC
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/701.ts
+#EXTINF:1,TCM
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/682.ts
+#EXTINF:1,Syfy
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/480.ts
+#EXTINF:1,TLC Discovery
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/644.ts
+#EXTINF:1,Comedy Central
+http://
+#EXTINF:1,Cine Mundo
+http://
+#EXTINF:0,Cartoon Network 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/587.ts
+#EXTINF:0,Gloob 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/156.ts
+#EXTINF:1,Boomerang 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/448.ts
+#EXTINF:0,Tooncast 3
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/702.ts
+#EXTINF:0,Disney Channel 
+http://tv.redecanais.com:1935/redecanaisdisneychannel/myStream/playlist.m3u8
+#EXTINF:0,Disney Channel HD
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/494.ts
+#EXTINF:0,Disney XD 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/460.ts
+#EXTINF:1,Disney Jr. 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/459.ts
+#EXTINF:0,Nickelodeon 2
+http://tv.redecanais.com:1935/redecanaisnick/myStream/playlist.m3u8
+#EXTINF:1,Nick Jr. 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/506.ts
+#EXTINF:1,TV Ra-Tim-Bum
+http://
+#EXTINF:1,Milk TV 
+http://stmv1.hostgs.net:1935/jtvmilk/jtvmilk/live.m3u8
+#EXTINF:1,Anime TV
+http://video7.stream.mx:1935/raxatv/raxatv/chunklist_w884577146.m3u8
+#EXTINF:0,Discovery Channel 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/516.ts
+#EXTINF:0,Discovery Civilization 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/737.ts
+#EXTINF:1,Discovery Science 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/736.ts
+#EXTINF:1,Discovery Turbo  
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/628.ts
+#EXTINF:1,Discovery Theater HD
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/655.ts
+#EXTINF:1,Discovery Home & Health HD
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/826.ts
+#EXTINF:1,Discovery Home & Health 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/656.ts
+#EXTINF:1,Investigacao Discovery 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/658.ts
+#EXTINF:0,Animal Planet 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/711.ts
+#EXTINF:1,Nat Geo 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/498.ts
+#EXTINF:0,Nat Geo Wild 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/712.ts
+#EXTINF:0,History Channel 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/723.ts
+#EXTINF:0,History 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/499.ts
+#EXTINF:0,Curta!
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/726.ts
+#EXTINF:1,Arte1
+http://
+#EXTINF:1,SporTV 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/212.ts
+#EXTINF:1,SporTV 2
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/508.ts
+#EXTINF:1,SporTV 3
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/511.ts
+#EXTINF:0,Esporte Interativo 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/662.ts
+#EXTINF:1,EI MAXX 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/660.ts
+#EXTINF:1,ESPN
+http://
+#EXTINF:1,ESPN + 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/698.ts
+#EXTINF:1,ESPN Brasil 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/827.ts
+#EXTINF:1,FOX Sports 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/464.ts
+#EXTINF:1,Band Sports 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/717.ts
+#EXTINF:1,Combate 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/114.ts
+#EXTINF:1,Canal OFF 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/730.ts
+#EXTINF:1,Woo Hoo
+http://
+#EXTINF:1,Globo News
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/830.ts
+#EXTINF:1,Band News 
+http://painel.tvdigitalsbl.net:8081/live/netiptv493/493/495.ts

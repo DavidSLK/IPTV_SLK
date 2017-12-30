@@ -186,39 +186,6 @@ class GoldenEye(object):
 
                 print "{0} GoldenEye strikes deferred. ({1} Failed)".format(self.counter[0], self.counter[1])
 
-                if self.counter[0] > 0 and self.counter[1] > 0 and self.last_counter[0] == self.counter[0] and self.counter[1] > self.last_counter[1]:
-                    print "\tServer may be DOWN!"
-    
-                self.last_counter[0] = self.counter[0]
-                self.last_counter[1] = self.counter[1]
-        except (Exception):
-            pass # silently ignore
-
-    def monitor(self):
-        while len(self.workersQueue) > 0:
-            try:
-                for worker in self.workersQueue:
-                    if worker is not None and worker.is_alive():
-                        worker.join(JOIN_TIMEOUT)
-                    else:
-                        self.workersQueue.remove(worker)
-
-                self.stats()
-
-            except (KeyboardInterrupt, SystemExit):
-                print "CTRL+C received. Killing all workers"
-                for worker in self.workersQueue:
-                    try:
-                        if DEBUG:
-                            print "Killing worker {0}".format(worker.name)
-                        #worker.terminate()
-                        worker.stop()
-                    except Exception, ex:
-                        pass # silently ignore
-                if DEBUG:
-                    raise
-                else:
-                    pass
 
 ####
 # Striker Class

